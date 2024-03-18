@@ -1,0 +1,228 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    width: 80%;
+    margin: 0.5rem auto;
+    background-color: hsl(30, 54%, 90%);
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* width: 800px; */
+    width: 80%;
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    padding-top: 2rem;
+}
+
+.image-section {
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.image-section img {
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+
+.container .main-heading {
+    font-size: 2.5rem;
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(24, 5%, 18%);
+}
+
+.container p {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    margin: 10px;
+    margin: 0.5rem 0.2rem;
+    padding: 0.25rem 0.2rem;
+    color: hsl(30, 10%, 34%);
+
+}
+
+.container .content {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: hsl(330, 100%, 98%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 10px;
+    opacity: 0.60;
+}
+
+.content .sub-minor-heading {
+    color: hsl(332, 51%, 32%);
+}
+
+.content ul li {
+    margin: 0.5rem;
+}
+
+.content ul li {
+    margin: 3px 15px;
+    padding: 5px;
+    line-height: 1.4;
+}
+
+.content ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.secondry-heading {
+    font-weight: 600;
+}
+
+.second-content,
+.third-content {
+    border-bottom: 1px solid rgba(133, 70, 50, 0.5);
+    margin-bottom: 1.25rem;
+}
+
+.minor-heading {
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(14, 45%, 36%);
+    margin: 0.5rem 0.5rem;
+    font-size: 2rem;
+}
+
+.second-content ul {
+    margin: 0.3rem 1.5rem;
+    color: hsl(14, 45%, 36%);
+
+}
+
+.second-content ul li {
+    font-family: "Outfit", sans-serif;
+    margin: 0.25rem 0.7rem;
+    padding: 0.25rem 0.75rem;
+    color: hsl(32, 10%, 34%);
+    opacity: 0.85;
+    list-style-type: square;
+}
+
+.second-content li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.second-content ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+/* third content */
+.third-content ol {
+    margin: 0.5rem 1.5rem;
+    font-family: "Outfit", sans-serif;
+    opacity: 0.85;
+}
+
+.third-content ol li {
+    margin: 0.25rem 0.7rem;
+    padding: 0.25rem 0.75rem;
+    opacity: 0.80;
+}
+
+.third-content li:first-child {
+    margin-top: 1rem;
+
+}
+
+.third-content li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.third-content li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+
+/* table section */
+
+.foot {
+    display: grid;
+    justify-items: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid rgba(133, 70, 50, 0.5);
+}
+
+.foot p:nth-child(odd){
+    margin-left: 2rem;
+}
+.foot p {
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.grid-container .foot p:nth-child(even) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.foot:last-child {
+    border: none
+}
+
+/* Apply media queries */
+@media (max-width:375px) {
+   .container .main-heading{
+        font-size: 2rem;
+    }
+    .minor-heading{
+        font-size: 1.25rem;
+    }
+    .sub-minor-heading{
+        font-size: 1rem;
+    }
+
+    .foot {
+    justify-items: center;
+    font-size: 0.75rem;
+    line-height: 1;
+    gap:0.25rem;
+    }
+
+    .grid-container .foot p {
+        margin: 0.2rem 0.20rem;
+        padding: 0.25rem 0.75rem;
+        font-size: 1rem;
+    }
+  
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1440px) {
+    .container {
+        width: 90%;
+    }
+}
